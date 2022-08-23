@@ -1,12 +1,12 @@
 INSERT INTO TB_PRECOS  (codigo_preco_diaria,valor_diaria,data_inicio_vigencia,data_fim_vigencia) VALUES (1,40.50,'1/8/1999','9/8/1999');
-INSERT INTO TB_CIDADES  (sigla_cidade,nome_cidade) VALUES ('RJ','Rio de Janeiro');
-INSERT INTO TB_ESTADOS  (sigla_estado,nome_estado) VALUES ('RJ','Rio de Janeiro');
-INSERT INTO TB_ACESSORIOS (sigla_acessorio,nome_acessorio) VALUES ('VOL','Volante com airbag duplo');
+INSERT INTO TB_CIDADES  (sigla_cidade,nome_cidade) VALUES ('SSA','Salvador');
+INSERT INTO TB_ESTADOS  (sigla_estado,nome_estado) VALUES ('BA','Bahia');
+INSERT INTO TB_ACESSORIOS (sigla_acessorio,nome_acessorio) VALUES ('VOL2','Volante com airbag duplo');
 INSERT INTO TB_FABRICANTES (cnpj_fabricante,nome_fabricante,telefones_fabricante) VALUES ('59.104.760/0001-91','Toyota','759999999,718888888');
 INSERT INTO TB_MODELOS (codigo_modelo,nome_modelo,cnpj_fabricante) VALUES (1,'Corolla','59.104.760/0001-91');
 INSERT INTO TB_GRUPOS (codigo_grupo,nome_grupo,codigo_preco_diaria) VALUES (1,'BÃ¡sico',1);
 INSERT INTO TB_VEICULOS (placa_veiculo,codigo_modelo,codigo_grupo,sigla_acessorio,ano_fabricacao_veiculo,data_aquisicao_veculo,data_venda_veiculo,quilometragem_atual_veiculo) VALUES ('AAA-123',1,1,'VOL','01/20/2022','01/24/2022','01/25/2022','10KM');
-INSERT INTO TB_ENDERECOS(codigo_endereco,numero_endereco,logradouro_endereco,bairro_endereco,cnpj_fabricante,sigla_cidade,sigla_estado) VALUES (1,'2478','Avenida Artemia Pires','SIM','59.104.760/0001-91','RJ','RJ');
+INSERT INTO TB_ENDERECOS(codigo_endereco,numero_endereco,logradouro_endereco,bairro_endereco,cnpj_fabricante,sigla_cidade,sigla_estado) VALUES (1,'283','Rua João das Botas','Canela','59.104.760/0001-91','SSA','BA');
 
 
 
