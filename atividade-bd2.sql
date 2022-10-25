@@ -223,3 +223,23 @@ placa_veiculo VARCHAR(255),
 sigla_acessorio VARCHAR(50)
 );
 
+/*
+Listar a descrição do prédio seguido da quantidade de salas existentes em cada
+prédio, ordenada pela descrição do prédio.
+*/
+
+SELECT pr.descricacaopredio as descricao_predio, count(s.numsala) as qnt_sala_existentes
+FROM tb_predio pr INNER JOIN tb_sala s
+ON pr.codpredio = s.codpredio
+GROUP by descricacaopredio
+
+
+/*
+Listar a descrição do prédio seguido da quantidade de salas existentes em cada
+prédio, somente se a quantidade de salas por prédio for maior do que 3.
+*/
+
+SELECT pr.descricacaopredio as descricao_predio, count(s.numsala) as qnt_sala_existentes
+FROM tb_predio pr INNER JOIN tb_sala s
+ON pr.codpredio = s.codpredio
+GROUP by descricacaopredio HAVING count(s.numsala) > 3
